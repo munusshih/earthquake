@@ -20,7 +20,7 @@ var southWest = L.latLng(-180, -360),
   var group1 = L.featureGroup();
 
   L.tileLayer(
-    'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+    'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=ebe7acb8-8d3a-44f5-8981-7a231e4dd6e5', {
       attribution: '',
       noWrap: false,
       ext: 'png'
