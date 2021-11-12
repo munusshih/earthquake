@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Earthquake Visualizations - Munus Shih</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="time-line-slider.min.js"></script>
+    <script src="https://unpkg.com/d3"></script>
+    <script src="leaflet.motion.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container title">
+        <h1><span>World Earthquake</span></h1>
+        <h1><span id="currentDate"> Visualizations 2021/</span></h1>
+    </div>
+
+    <div class="container des">
+        <p>The <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php">USGS Earthquake Hazards Program</a>
+            is part of the National Earthquake Hazards Reduction Program (NEHRP),
+            established by the American Congress in 1977. This map visualize all the earthquakes in the world that have
+            been documented by USGS over the past 30 days.
+            Designed by <a href="https://munusshih.cargo.site">Munus Shih</a>, 2021</p>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- <script src='https://unpkg.com/@turf/turf@5.1.6'></script> -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
